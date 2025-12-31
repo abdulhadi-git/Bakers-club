@@ -23,7 +23,7 @@ let header = `<nav class="navbar navbar-expand-lg px-3 position-fixed w-100 z-3 
                         <a class="nav-link custom-link" href="orders.html">Contact Us</a>
                     </li>
                 </ul>
-                <div class="d-flex gap-2 align-itms-center" id="nav-btns-holder">
+                <div class="d-flex gap-2 align-itms-center nav-btns-holder">
                 <a href="signin.html" class="custom-btn singin nav-btns mt-2" >Sign in!</a>
                 <a href="signup.html" class="custom-btn signup nav-btns mt-2" >Sign up!</a>
                 </div>
@@ -56,7 +56,10 @@ let offcanvas = `
                         <a class="nav-link custom-link" href="orders.html">Contact Us</a>
                     </li>
                 </ul>
-                <a href="signin.html" class="custom-btn mt-2">Sign in!</a>
+                <div class="d-flex gap-2 align-itms-center nav-btns-holder">
+                <a href="signin.html" class="custom-btn singin nav-btns mt-2" >Sign in!</a>
+                <a href="signup.html" class="custom-btn signup nav-btns mt-2" >Sign up!</a>
+                </div>
             </div>
   </div>
 </div>`
@@ -116,6 +119,7 @@ $(document).ready(function () {
 
     // nav links active
     let PagePath = window.location.pathname.split("/").pop();
+    console.log(PagePath)
     $('.custom-link').each(function () {
         let currentPage = $(this).attr('href')
         if (currentPage == PagePath) {
@@ -144,9 +148,19 @@ $(document).ready(function () {
 
     if (localStorage.getItem("CurrentUser")) {
         $('.nav-btns').remove();
-        let profileNav = `<a href="profile.html" class="custom-btn mt-2" >Profile</a>`
-        $('#nav-btns-holder').append(profileNav);
+        let profileNav = `<a href="profile.html" class="custom-btn mt-2 profile-nav" id="profile-nav">Profile</a>`
+        $('.nav-btns-holder').each(function(){
+            $(this).append(profileNav);
+        })
     }
+    $('.profile-nav').each(function () {
+        let profilePage = $(this).attr("href");
+        if (profilePage == PagePath) {
+            $(this).addClass('active');
+        } else {
+            $(this).removeClass('active');
+        }
+    })
     $('#logout-btn').click(function () {
         const swalWithBootstrapButtons = Swal.mixin({
             customClass: {

@@ -15,6 +15,12 @@ main{
     position: fixed;
     z-index: -3;
 }
+.profile-nav{
+    position: relative;
+}
+.profile-nav.active::after{
+    bottom: 0;
+}
 .logout-btn{
     width: 100%;
     padding: 8px 0;
