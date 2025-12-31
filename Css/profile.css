@@ -30,3 +30,14 @@ main{
     background-color: #b87c4c;
     color: white;
 }
+.profile{
+    width: 50%;
+}
+
+
+@media(max-width: 512px){
+    .profile{
+        width: 100% !important;
+    }
+
+}
