@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakers Club</title>
+    <link rel="stylesheet" href="./Css/signup.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Css/navbar.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header"></div>
+    <div id="canvas"></div>
+    <img src="../imgaes/Products-imges/hero-bg.jpeg" class="bg-img" alt="">
+    <div class="main">
+        <div class="container w-100 h-100 d-flex flex-column pt-5 gap-4 align-items-center justify-content-center">
+            <h1 class="text-center fs-2" data-aos="fade-right">Sign up!</h1>
+            <form class="row g-2 form p-4 rounded-4 fs-5 shadow-lg" id="form" data-aos="fade-right">
+                <div class="col-12 m-0">
+                    <label for="name" class="form-label">Enter your name</label>
+                    <input type="text" class="form-control" id="name" required placeholder="Name" autofocus>
+                </div>
+                <div class="col-12">
+                    <label for="email" class="form-label">Enter your email</label>
+                    <input type="email" class="form-control" id="email" required placeholder="Email">
+                </div>
+                <div class="col-12">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" required placeholder="Password">
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="shadow btn fs-5 rounded-4 py-2 my-btn w-100">Sign up</button>
+                </div>
+                <p class="fs-5">Have an account? <a href="signin.html">Sign in!</a></p>
+            </form>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./Js/register.js"></script>
+    <script src="./Js/profile.js"></script>
+    <script src="./Js/navbar.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
