@@ -1,6 +1,6 @@
-let header = `<nav class="navbar navbar-expand-lg px-3 position-fixed w-100 z-3 shadow">
+let header = `<nav class="navbar navbar-expand-lg px-4 position-fixed w-100 z-3 shadow">
         <div class="container-fluid">
-            <a class="navbar-brand fw-bold" href="index.html"><span>Bakers</span> Club</a>
+            <a class="navbar-brand fw-bold fs-2" href="index.html"><span>Bakers</span> Club</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>

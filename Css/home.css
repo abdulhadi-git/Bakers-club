@@ -17,6 +17,8 @@ body {
 .hero-content {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -73,6 +75,7 @@ body {
 .custom-btn:hover {
     color: #F7F1DE;
 }
+
 
 /* section 2 */
 #section2 {
@@ -210,6 +213,7 @@ body {
 .left {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.293), rgba(0, 0, 0, 0.564)), url(../imgaes/home-images/sub-bg-1.jpeg);
     color: white;
+    padding: 20px;
 }
 
 .right {
@@ -310,20 +314,24 @@ body {
 }
 
 /* section 6 */
-#section6{
+#section6 {
     width: 100%;
     min-height: 50vh;
 }
-#section6 .row{
+
+#section6 .row {
     min-height: 50vh;
 }
-.icons{
+
+.icons {
     width: 35px;
     transition: all 0.2s ease;
 }
-.icons:hover{
+
+.icons:hover {
     transform: scale(1.2) !important;
 }
+
 @media(max-width: 512px) {
     #section3 {
         padding: 20px 0;
@@ -349,14 +357,17 @@ body {
     .hero-content .content {
         padding: 15px;
     }
-    #section6{
+
+    #section6 {
         text-align: center;
     }
-    #section6 p{
+
+    #section6 p {
         margin: auto;
     }
-    .icons-wrapper{
+
+    .icons-wrapper {
         justify-content: center;
     }
-    
+
 }
